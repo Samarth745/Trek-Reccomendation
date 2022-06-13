@@ -7,4 +7,5 @@ Bikat adventures website is scraped using Selenium we Automation tool and stored
 Scrapping errors are further handled in Excel. <br />
 Use Pandas to create required features and Analyze Dataset <br />
 Use Pandas to filter out trek recemondations based on season, no of days and Difficulty <br />
+* The model also suggests multiple treks in the same region if possible under given criteria
 
