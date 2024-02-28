@@ -2,20 +2,45 @@
 **Goal** - The Goal of this project is to provide treks suggestion on given dates with required information <br />
 **Skills used** - Web Scraping, Pandas <br>
 **Libraries used** - Selinium, BeatifulSoup, Pandas
+This project aims to analyze trekking data using Pandas, filter trek recommendations based on user preferences, and suggest suitable trekking options within a given date range. Additionally, it utilizes Natural Language Processing (NLP) techniques to provide best trek suggestions based on textual descriptions.
 
-## Web Scraping
-The data for the project is recieved by scraping the website of Bikat Adventures (Bikatadventures.com) <br />
-The data is scraped using Selenium web automation tool. The scraper first generates url for all treks b scraping monthwise trekking Data <br>
-The generated url is stored in a list which now contains all treks from the website <br>
-This list is further iterated to get features like Difficulty, Source, Destination, Cost, Months, Description, Addons. <br>
-The scraped data is received byy crawling the elements in the page and is stored in the form of tupple. <br>
-This stored data is further converted to a data frame <br>
-
-## Model
-Scrapping errors are further handled in Excel. <br />
-Use Pandas to create required features and Analyze Dataset <br />
-Use Pandas to filter out trek recemondations based on season, no of days and Difficulty <br />
-Analyze the no of days between given dates and suggest all the possible treks in combination between those days <br>
-For Example - If the date range include 10 days then suggest a 10 day trek as well as combination of 4 day trek and 6 day trek depending on the season. 
+Key Features:
 
 
+
+## Filter Trek Recommendations:
+
+- Filter trek recommendations based on user preferences for season, number of days, and difficulty level.
+- Use Pandas to efficiently filter and sort trek options according to specified criteria.
+
+## Date Range Analysis:
+
+- Analyze the number of days between given dates to determine the available trekking duration.
+- Suggest suitable trekking options based on the available duration, considering both single trek options and combinations of shorter treks.
+
+## NLP-based Trek Suggestions:
+
+- Apply Natural Language Processing techniques to analyze textual descriptions of treks.
+- Extract key features and sentiments from trek descriptions using NLP algorithms.
+- Provide best trek suggestions based on the analysis of trek descriptions, highlighting top recommendations based on user preferences and trek characteristics.
+
+## Project Flow:
+
+
+- Handle scraping errors and perform initial data cleaning in Excel.
+Use Pandas to further preprocess and clean the dataset, creating necessary features for analysis.
+Trek Recommendation Filtering:
+
+- Use Pandas to filter trek recommendations based on user preferences for season, duration, and difficulty.
+Apply filtering criteria to narrow down trek options and present relevant choices to the user.
+Date Range Analysis and Trek Suggestions:
+
+- Analyze the number of days between given dates to determine the available trekking duration.
+Suggest suitable trekking options based on the available duration, considering both single trek options and combinations of shorter treks.
+NLP-based Best Trek Suggestions:
+
+- Utilize NLP techniques to analyze textual descriptions of treks and extract key features.
+Generate best trek suggestions based on the analysis of trek descriptions, taking into account user preferences and trek characteristics.
+
+## Conclusion:
+This project leverages Pandas for data analysis, filters trek recommendations based on user preferences, suggests suitable trekking options within a given date range, and utilizes NLP for providing best trek suggestions. By integrating these functionalities, the project aims to assist users in finding optimal trekking experiences tailored to their preferences and available time.
