@@ -6,6 +6,7 @@ from flask import Flask, render_template, request
 import pandas as pd
 import numpy as np
 import nltk
+nltk.download()
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 nltk.download('wordnet')
